@@ -19,7 +19,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [time, setTime] = useState(times[0])
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
