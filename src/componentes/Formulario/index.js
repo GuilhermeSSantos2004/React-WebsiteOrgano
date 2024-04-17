@@ -2,40 +2,14 @@ import { useState } from 'react'
 import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
-
-// import './Formulario.css'
-
-// const times = [
-//     'Programação',
-//     'Front-End',
-//     'Data Science',
-//     'Devops',
-//     'UX e Design',
-//     'Mobile',
-//     'Inovação e Gestão'
-// ]
-
-// const times = [
-//     'Programação',
-//     'Front-End',
-//     'Data Science',
-//     'Devops',
-//     'UX e Design',
-//     'Mobile',
-//     'Inovação e Gestão'
-// ]
+import './Formulario.css'
 
 const Formulario = (props) => {
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 8e8d0e8a79f06e50ba33c542e0916a938e7e1e78
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState(times[0])
+    const [time, setTime] = useState('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -45,6 +19,10 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
