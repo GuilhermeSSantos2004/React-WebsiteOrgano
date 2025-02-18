@@ -2,7 +2,7 @@ name: Verificar alterações do PR
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 permissions:
   contents: read
